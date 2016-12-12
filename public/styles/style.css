@@ -1,0 +1,114 @@
+body {
+  padding: 0;
+  width: 100%;
+  height: 100%;
+  margin: auto;
+  font-family: 'Raleway', sans-serif;
+  background-color: white; }
+
+a {
+  color: #00B7FF; }
+
+li {
+  padding-left: 3em;
+  display: inline-block; }
+
+ul {
+  font-family: 'Raleway', sans-serif;
+  font-size: 1.2em;
+  display: inline-block;
+  list-style-type: none;
+  margin: auto;
+  padding: 1em 5em 0 0;
+  color: white; }
+
+#downarrow {
+  height: 2em;
+  width: 2em;
+  top: 95%;
+  position: absolute; }
+
+#github {
+  height: 2em;
+  width: 2em; }
+
+#name {
+  font-family: 'Raleway', sans-serif;
+  color: white;
+  padding-top: 45vh;
+  line-height: 2em;
+  font-size: 1em;
+  text-align: center; }
+
+p {
+  text-align: center; }
+
+span {
+  text-align: center;
+  border-right: .05em solid;
+  animation: caret 1s steps(1) infinite; }
+
+@keyframes caret {
+  50% {
+    border-color: transparent; } }
+
+#aboutme {
+  font-family: 'Raleway', sans-serif;
+  text-align: center;
+  background-color: white;
+  margin-top: 0;
+  padding: 10vh 20% 10vh 20%; }
+
+#aboutme > h2 {
+  padding-top: 10%; }
+
+#aboutme > h2, #aboutme > p {
+  background-color: rgba(169, 169, 169, 0.5);
+  margin: 0;
+  padding-bottom: 10%;
+  padding-left: 20%;
+  padding-right: 20%; }
+
+#head {
+  width: 100%;
+  height: 100vh;
+  text-align: center;
+  background-color: black;
+  margin: 0;
+  style: none; }
+
+#about {
+  display: inline-block;
+  font-size: 2em;
+  width: 100%;
+  height: 130vh;
+  background-color: white; }
+
+#projects {
+  display: inline-block;
+  text-align: center;
+  font-size: 3em;
+  height: 100vh; }
+
+#projects > img {
+  max-height: 100%;
+  max-width: 100%;
+  background-color: black;
+  padding: 2px;
+  height: 10em;
+  width: 40%; }
+
+#1, #3 {
+  float: right; }
+
+#2 {
+  float: left; }
+
+#projects > div {
+  margin-top: 10em;
+  margin-right: 5em;
+  padding: 1em;
+  height: 30em;
+  width: 50em;
+  background-color: black;
+  float: right; }
