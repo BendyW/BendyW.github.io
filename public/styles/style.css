@@ -117,9 +117,12 @@ footer {
 #github {
   display: block;
   height: 2em;
-  width: 2em; }
+  width: 2em;
+  padding-left: 30%;
+  margin-left: 10em; }
 
 #linkedin {
   display: block;
+  margin: auto;
   height: 2em;
   width: 2em; }
