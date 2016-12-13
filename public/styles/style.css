@@ -48,15 +48,26 @@ span {
   50% {
     border-color: transparent; } }
 
+#about {
+  display: inline-block;
+  font-size: 1.5em;
+  width: 100%;
+  height: 60vh;
+  background-color: black; }
+
 #aboutme {
+  display: inline-block;
   font-family: 'Raleway', sans-serif;
   text-align: center;
-  background-color: white;
+  background-color: black;
   margin-top: 0;
   padding: 10vh 20% 10vh 20%; }
 
 #aboutme > h2 {
   padding-top: 10%; }
+
+#aboutme > p {
+  font-size: .7em; }
 
 #aboutme > h2, #aboutme > p {
   background-color: rgba(169, 169, 169, 0.5);
@@ -69,22 +80,26 @@ span {
   width: 100%;
   height: 100vh;
   text-align: center;
-  background-color: black;
+  background-image: url("../images/city.jpeg");
+  background-size: cover;
   margin: 0;
   style: none; }
 
-#about {
-  display: inline-block;
-  font-size: 2em;
-  width: 100%;
-  height: 130vh;
-  background-color: white; }
-
 #projects {
+  margin-top: 4em;
   display: inline-block;
   text-align: center;
-  font-size: 3em;
-  height: 100vh; }
+  font-size: 1.5em;
+  height: auto; }
+
+#projects > h1 {
+  text-align: left;
+  margin-left: 15%; }
+
+.border {
+  border-top: 1px solid #ccc;
+  margin-top: 5em;
+  height: 5em; }
 
 #projects > a {
   height: 0;
@@ -99,13 +114,13 @@ span {
   background-color: black;
   padding: 1px;
   height: auto;
-  width: 40%; }
+  width: 70%; }
 
 #projects > div > p {
-  font-size: .5em;
+  font-size: .7em;
   width: 50%;
   text-align: left;
-  margin-left: 30%; }
+  margin-left: 15%; }
 
 footer {
   display: inline-block;
