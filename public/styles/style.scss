@@ -1,3 +1,8 @@
+$break-small: 531px;
+
+
+
+
 body {
   padding: 0;
   width: 100%;
@@ -8,12 +13,14 @@ body {
   background-color: white;
 }
 a {
-  color: #00B7FF
+  color: #00B7FF;
+  text-decoration: none;
 }
 
 li{
   padding-left: 3em;
   display: inline-block;
+  text-align: center;
 }
 ul{
   font-family: 'Raleway', sans-serif;
@@ -23,13 +30,17 @@ ul{
   margin: auto;
   padding: 1em 5em 0 0;
   color: white;
+  @media screen and (max-width: $break-small){
+    display: block;
+
+  }
 
 }
 #downarrow{
   height: 2em;
   width: 2em;
   top: 95%;
-  position: absolute;
+  text-align: center;
 }
 
 #name{
@@ -160,6 +171,8 @@ footer{
   height: 2em;
   width: 2em;
 }
+
+
 
 
 
