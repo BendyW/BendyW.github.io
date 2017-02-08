@@ -142,4 +142,8 @@ footer {
 
 @media (max-width: 531px) {
   ul {
-    display: block; } }
+    display: block; }
+  #name {
+    padding-top: 45vh;
+    line-height: 2em;
+    font-size: 4em; } }
