@@ -14,13 +14,9 @@ a {
 }
 
 li{
-  padding-left: 3em;
   display: inline-block;
   text-align: center;
 }
-
-
-//Center ul
 
 ul{
   font-family: 'Raleway', sans-serif;
@@ -28,11 +24,11 @@ ul{
   display:inline-block;
   list-style-type: none;
   margin: auto;
-  padding: 1em 5em 0 0;
+  padding: 1em 3em;
   color: white;
   //@media screen and (max-width: $break-small){
   //  display: block;
-  //}
+  //} sadasd
 
 }
 #downarrow{
@@ -45,8 +41,7 @@ ul{
 #name{
   font-family: 'Raleway', sans-serif;
   color: white;
-  padding-top: 45vh;
-  line-height: 2em;
+  padding-top: 150px;
   font-size: 1em;
   text-align: center;
 }
@@ -89,7 +84,7 @@ span {
 
 #head{
   width: 100%;
-  height: 100vh;
+  height: 750px;
   text-align: center;
   background-image: url('../images/city.jpeg');
   background-size: cover;
@@ -99,11 +94,13 @@ span {
 
 
 #projects{
-  margin-top: 4em;
+  padding-top: 4em;
   display:inline-block;
   text-align: center;
   font-size:1.5em;
   height: auto;
+  background: black;
+  color: white;
 }
 #projects > h1{
   text-align: left;
@@ -168,8 +165,7 @@ footer{
   }
   #name{
     padding-top: 45vh;
-    line-height: 2em;
-    font-size: 4em;
+    font-size: 1.5em;
   }
 }
 
