@@ -1,85 +1,195 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <title>Ben Waldman</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel='stylesheet' href='public/styles/style.css' />
-    <link rel="stylesheet" href="public/styles/unsemantic-grid-responsive-no-ie7.css">
-    <link href="https://fonts.googleapis.com/css?family=Raleway:500" rel="stylesheet">
-    <script src="public/javascripts/typewriter.js"></script>
-    <script src="public/javascripts/smoothscroll.js"></script>
-    <script src="public/javascripts/googleAnalytics.js"></script>
-
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Ben Waldman</title>
+  <meta name="description" content="Ben Waldman — Full-stack developer based in Coastal Maine. Building for the web, front to back.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;700&family=Hanken+Grotesk:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="public/styles/style.css">
+  <script src="public/javascripts/googleAnalytics.js" defer></script>
 </head>
 <body>
 
-<section id="head">
-    <nav id="navbar">
-        <li>
-            <a href="#projects"><ul class="pagelink">Projects</ul></a>
-            <a href="#about"><ul class="pagelink">About</ul></a>
-            <a href="#contact"><ul class="pagelink">Contact</ul> </a>
-        </li>
-    </nav>
-    <div>
-        <header id="name">
-            <h1>Ben Waldman</h1>
-            <p>Take a look around.</p>
-        </header>
+  <!-- Header -->
+  <header class="site-header">
+    <div class="header-grid">
+      <div class="brand">
+        <span class="brand-square" aria-hidden="true"></span>
+        <span class="brand-wordmark">Ben Waldman</span>
+      </div>
+      <nav class="site-nav" aria-label="Site navigation">
+        <a href="#work" class="nav-link"><sup>01</sup>Work</a>
+        <a href="#about" class="nav-link"><sup>02</sup>About</a>
+        <a href="#" class="nav-link"><sup>03</sup>Résumé</a>
+        <a href="mailto:benmw2@gmail.com" class="nav-link"><sup>04</sup>Contact</a>
+      </nav>
     </div>
-        <img id="downarrow" src="public/images/scroll-down-arrow-icon.png" alt="arrow">
-</section>
+  </header>
 
+  <main>
 
-<section id="projects">
-    <h1>Projects</h1>
-    <div>
-        <a href="https://bendyw.github.io/Snake/" target="_blank">
-            <img src="public/images/Snake.png" >
+    <!-- Hero -->
+    <section class="hero" aria-label="Introduction">
+      <div class="hero-inner">
+        <div class="hero-role">
+          <span class="role-title">Full-stack developer</span>
+          <span class="role-location">Coastal Maine · Available for work</span>
+        </div>
+        <h1 class="hero-name">Ben<br>Waldman<span class="hero-period" aria-hidden="true">.</span></h1>
+        <div class="hero-lead">
+          <div class="hero-est">
+            <span>Est.</span>
+            <span>2017</span>
+          </div>
+          <p class="hero-bio">Full-stack developer and graduate of General Assembly's Web Development Immersive. I build with JavaScript and Ruby frameworks — from clean object-oriented foundations to full MEAN-stack apps.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Work -->
+    <section id="work" aria-label="Selected work">
+      <div class="section-label-bar">
+        <span class="label-left">Selected Work</span>
+        <span class="label-right">Description / Stack / Link</span>
+      </div>
+
+      <a href="https://bendyw.github.io/Snake/" class="work-row" target="_blank" rel="noopener noreferrer">
+        <div class="work-row-inner">
+          <div class="work-left">
+            <span class="work-num">01</span>
+            <div class="work-title-group">
+              <h3 class="work-title">Snake</h3>
+              <p class="work-meta">Game — Vanilla JavaScript — 2017</p>
+            </div>
+          </div>
+          <div class="work-right">
+            <p class="work-blurb">The classic game of Snake, built from scratch in JavaScript — a study in clean object-oriented modeling with the game loop, state, and rendering cleanly separated.</p>
+            <div class="work-bottom">
+              <div class="chips">
+                <span>JavaScript</span>
+                <span>OOP</span>
+                <span>Canvas</span>
+              </div>
+              <span class="work-cta">Live ↗</span>
+            </div>
+          </div>
+        </div>
+      </a>
+
+      <a href="https://gatherappproject.herokuapp.com/" class="work-row" target="_blank" rel="noopener noreferrer">
+        <div class="work-row-inner">
+          <div class="work-left">
+            <span class="work-num">02</span>
+            <div class="work-title-group">
+              <h3 class="work-title">Gather</h3>
+              <p class="work-meta">Full-stack — Events discovery — 2017</p>
+            </div>
+          </div>
+          <div class="work-right">
+            <p class="work-blurb">An app that makes local events easier to find. Pulls from the MeetUp API and plots events on Google Maps, with an Express front-to-back and a MySQL store.</p>
+            <div class="work-bottom">
+              <div class="chips">
+                <span>Express</span>
+                <span>MySQL</span>
+                <span>MeetUp API</span>
+                <span>Maps</span>
+              </div>
+              <span class="work-cta">Live ↗</span>
+            </div>
+          </div>
+        </div>
+      </a>
+
+      <a href="https://github.com/BendyW/beercrawl-app-client" class="work-row" target="_blank" rel="noopener noreferrer">
+        <div class="work-row-inner">
+          <div class="work-left">
+            <span class="work-num">03</span>
+            <div class="work-title-group">
+              <h3 class="work-title">BarCrawl</h3>
+              <p class="work-meta">Full-stack — Social game — 2018</p>
+            </div>
+          </div>
+          <div class="work-right">
+            <p class="work-blurb">A team game for a night out. Create a user, join a team, and crawl a Google-Maps route through the city completing challenges to rack up points.</p>
+            <div class="work-bottom">
+              <div class="chips">
+                <span>MEAN</span>
+                <span>Angular</span>
+                <span>Maps</span>
+              </div>
+              <span class="work-cta">GitHub ↗</span>
+            </div>
+          </div>
+        </div>
+      </a>
+
+      <a href="#" class="work-row work-row--placeholder" aria-disabled="true">
+        <div class="work-row-inner">
+          <div class="work-left">
+            <span class="work-num">04</span>
+            <div class="work-title-group">
+              <h3 class="work-title work-title--muted">New work</h3>
+              <p class="work-meta">In progress — Coming soon — 2026</p>
+            </div>
+          </div>
+          <div class="work-right">
+            <p class="work-blurb">Something new is in the works. Check back soon — or reach out and I'll walk you through what I'm building.</p>
+            <div class="work-bottom">
+              <div class="chips"></div>
+            </div>
+          </div>
+        </div>
+      </a>
+    </section>
+
+    <!-- About -->
+    <section id="about" class="about" aria-label="About">
+      <div class="about-grid">
+        <div class="about-left">
+          <h2 class="about-headline">Full-stack developer building for the web, <mark>front to back</mark> — clean code, clear interfaces.</h2>
+        </div>
+        <div class="about-right">
+          <p class="about-label">Toolkit / 08</p>
+          <div class="skills-grid">
+            <span>JavaScript</span>
+            <span>Node / Express</span>
+            <span>Angular</span>
+            <span>MongoDB</span>
+            <span>MySQL</span>
+            <span>Ruby on Rails</span>
+            <span>Google Maps API</span>
+            <span>OOP</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- Footer -->
+  <footer class="site-footer" id="contact" aria-label="Contact">
+    <div class="footer-grid">
+      <div class="footer-left">
+        <p class="footer-label">Let's work together</p>
+        <a href="mailto:benmw2@gmail.com" class="footer-email">benmw2@gmail.com</a>
+      </div>
+      <div class="footer-right">
+        <a href="https://github.com/BendyW" target="_blank" rel="noopener noreferrer" class="footer-link">
+          <span>github.com/BendyW</span><span class="footer-arrow">↗</span>
         </a>
-        <p>The classic game of Snake done simply in javascript. Showing off my skills in designing well modeled concepts in Object Oriented Programming. </p>
-    </div>
-    <div class="border"></div>
-    <div>
-        <a href="https://gatherappproject.herokuapp.com/" target="_blank">
-            <img src="public/images/gather1.png">
+        <a href="https://www.linkedin.com/in/ben-waldman-2bb2a864" target="_blank" rel="noopener noreferrer" class="footer-link">
+          <span>linkedin.com/in/ben-waldman</span><span class="footer-arrow">↗</span>
         </a>
-        <p>A project with the goal of making it easier to see events. Uses MeetUp's API. Also uses GoogleMaps API to map out MeetUP events. The front and back end take work on ExpressJS. Server made using MySql. Done before having an experience in AngularJS or ReactJS. Will be reworked in the future using angular.</p>
-    </div>
-    <div class="border"></div>
-    <div>
-        <a href="https://github.com/BendyW/beercrawl-app-client" target="_blank">
-            <img src="public/images/barcrawl.png">
+        <a href="#" class="footer-link">
+          <span>Résumé</span><span class="footer-arrow">↗</span>
         </a>
-        <p>A game meant to be played with friends. Create a user, join a team, and join an event as a team. Bar crawl through the city while completing challenges to score points. Maps a route on GoogleMaps filled with challenges to complete. If I have time I will add the ability to upload images, and possibly a way for users to create challenges.</p>
+        <p class="footer-copy">© 2026 Ben Waldman</p>
+      </div>
     </div>
-    <div class="border"></div>
-</section>
-<div class="grid-container">
-    <div class="grid-25">
-    </div>
-</div>
-<section id="about">
-    <div>
-        <section id="aboutme">
+  </footer>
 
-            <p>
-                A MEAN stack developer. Graduated from General Assembly's Web Development Immersive. I've created projects utilizing Javascript frameworks as well as Ruby frameworks.
-            </p>
-        </section>
-    </div>
-
-</section>
-<footer id="contact">
-    <p>Contact Me benmw2@gmail.com</p>
-    <!--Fix Spacing-->
-    <!---->
-    <!---->
-    <div id="footerimages">
-        <ul><a href="https://github.com/BendyW" target="_blank"><img id="github" src="public/images/github.png" alt="github" /></a></ul>
-        <ul><a href="https://www.linkedin.com/in/ben-waldman-2bb2a864" target="_blank"><img id="linkedin" src="public/images/linkedin.png" alt="linkedin" /></a></ul>
-    </div>
-    <!---->
-</footer>
 </body>
 </html>
